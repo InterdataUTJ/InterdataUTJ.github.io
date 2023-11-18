@@ -1,0 +1,54 @@
+.diagrama-gantt-container {
+    width: 100%;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.diagrama-gantt {
+    width: 180%;
+}
+
+.main-container {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container > p {
+    text-align: justify;
+}
+
+.download-button {
+    background-color: var(--nav-second-color);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.download-button:hover {
+    background-color: var(--nav-third-color);
+}
+
+.command-ss {
+    width: 95%;
+    margin: auto;
+    max-width: 500px;
+    border-radius: 15px;
+    background-color: var(--nav-second-color);
+}
+
+.network-ss {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: var(--nav-second-color);
+}
