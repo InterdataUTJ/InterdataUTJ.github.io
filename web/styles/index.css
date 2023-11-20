@@ -39,3 +39,7 @@ hi {
   font-style: italic;
   color: var(--text-second-color);
 }
+
+p {
+  text-align: justify;
+}
