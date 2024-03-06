@@ -36,7 +36,7 @@ function setupViewTransition() {
 async function startTransition(toUrl) {
   const [mainHtml, titleText] = await fetchNewPage(toUrl.pathname);
   document.startViewTransition(() => {
-    document.querySelector("main").innerHTML = mainHtml;
+    document.querySelector('main').innerHTML = mainHtml;
     document.title = titleText;
     document.documentElement.scrollTop = 0;
   });
