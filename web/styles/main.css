@@ -9,17 +9,8 @@
 
 .page-title {
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.title-item-icon {
-  filter: invert(90%);
-  width: 50px;
 }
 
 .iframe-container {

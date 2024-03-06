@@ -51,6 +51,7 @@
 .article-section {
   padding: 5px;
   text-align: justify;
+  text-wrap: balance;
 }
 
 .section-subtitle {

@@ -1,17 +1,17 @@
 function checkNavigationSupport() {
-  return new Boolean(document.startViewTransition);
+  return !!document?.startViewTransition;
 }
 
 async function fetchNewPage(url) {
   const response = await fetch(url);
   const html = await response.text();
-  const [, bodyHtml] = html.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+  const [, mainHtml] = html.match(/<main[^>]*>([\s\S]*)<\/main>/i);
   const [, titleText] = html.match(/<title[^>]*>([^<]+)<\/title>/i);
-  return [bodyHtml, titleText];
+  return [mainHtml, titleText];
 }
 
 
-function startViewTransition() {
+function setupViewTransition() {
   if (!checkNavigationSupport()) return;
 
   window.navigation.addEventListener('navigate', (event) => {
@@ -19,20 +19,28 @@ function startViewTransition() {
   
     // Is this an external page?
     if (location.origin !== toUrl.origin) return;
-    
+      
     event.intercept({
       async handler() {
-
-        const [bodyHtml, titleText] = await fetchNewPage(toUrl.pathname);
-
-        document.startViewTransition(() => {
-          document.body.innerHTML = bodyHtml;
-          document.title = titleText;
-          document.documentElement.scrollTop = 0;
-        });
+        if (!navIsShowed()) return startTransition(toUrl);
+        hideNav();
+        setTimeout(() => {
+          startTransition(toUrl);
+        }, 200);
       }
     });
+    
   });
 }
 
-startViewTransition();
+async function startTransition(toUrl) {
+  const [mainHtml, titleText] = await fetchNewPage(toUrl.pathname);
+  document.startViewTransition(() => {
+    document.querySelector("main").innerHTML = mainHtml;
+    document.title = titleText;
+    document.documentElement.scrollTop = 0;
+  });
+}
+
+setupViewTransition();
+addEvents();
