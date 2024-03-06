@@ -29,6 +29,7 @@
 .header-title {
   font-size: 2rem;
   flex: 1;
+  font-family: 'Raleway', sans-serif;
 }
 
 .menu-button-icon {
