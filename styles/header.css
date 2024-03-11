@@ -1,0 +1,80 @@
+/* ================================= */
+/* ========= Header styles ========= */
+/* ================================= */
+
+/* Header container, <header> tag */
+.header-container {
+  z-index: 3;
+  background-color: var(--nav-color);
+}
+
+/* Header content, a div tag to use max-width */
+.header-content {
+  gap: 1.5em;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+  width: 100%;
+  max-width: var(--max-header-width);
+  margin: auto;
+}
+
+.header-home-button {
+  height: 4em;
+  flex: 1;
+  border-radius: 0.6em;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header-logo-img {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.header-title {
+  font-size: 2rem;
+  flex: 1;
+  font-family: 'Raleway', sans-serif;
+}
+
+.menu-button-icon {
+  display: none;
+  filter: invert(90%);
+  width: 4em;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: scale 0.1s ease-in-out;
+}
+
+.menu-button-icon:hover {
+  filter: invert(95%);
+  scale: 1.1;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .header-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  .menu-button-icon {
+    display: inline;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 490px) {
+  .header-title {
+    display: none;
+  }
+
+  .header-logo-container {
+    flex: 1;
+  }
+}

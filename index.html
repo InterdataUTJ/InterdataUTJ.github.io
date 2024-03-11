@@ -3,244 +3,217 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="web/assets/logo/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png" />
     <link rel="manifest" href="manifest.json">
     <title>Rocket Code</title>
 
-    <link rel="stylesheet" href="web/styles/index.css">
-    <link rel="stylesheet" href="web/styles/header.css">
-    <link rel="stylesheet" href="web/styles/main.css">
-    <link rel="stylesheet" href="web/styles/footer.css">
-    <link rel="stylesheet" href="web/styles/pages/development.css">
-    <link rel="stylesheet" href="web/styles/pages/about.css">
-    <link rel="stylesheet" href="web/styles/viewTransitions.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/pages/development.css">
+    <link rel="stylesheet" href="styles/pages/about.css">
+    <link rel="stylesheet" href="styles/viewTransitions.css">
 
-    <script src="web/scripts/events.js" defer></script>
-    <script src="web/scripts/viewTransition.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/viewTransition.js" defer></script>
   </head>
 
   <body>
 
     <header class="header-container">
       <div class="header-content">
-        <a href="./" class="header-logo-container">
-          <img class="header-logo-img" src="web/assets/logo/logo.webp" alt="Rocket Code">
+        <a href="./" class="header-home-button">
+          <img class="header-logo-img" src="assets/logo/logo.webp" alt="Rocket Code">
+          <h2 class="header-title">Rocket Code</h2>
         </a>
-        <h2 class="header-title">Rocket Code</h2>
-        <img src="web/assets/icons/menu-2.svg" class="menu-button-icon" alt="menu-icon">
+        <img src="assets/icons/menu-2.svg" class="menu-button-icon" alt="menu-icon">
       </div>
     </header>
 
     <nav class="nav-container">
       <a class="nav-item" href="./">
-        <img src="web/assets/icons/users.svg" class="nav-item-icon" alt="users-icon">
+        <img src="assets/icons/users.svg" class="nav-item-icon" alt="users-icon">
         Sobre Nosotros
       </a>
       <a class="nav-item" href="clients">
-        <img src="web/assets/icons/coins.svg" class="nav-item-icon" alt="coins-icon">
+        <img src="assets/icons/coins.svg" class="nav-item-icon" alt="coins-icon">
         Nuestros Clientes
       </a>
       <a class="nav-item" href="software">
-        <img src="web/assets/icons/code.svg" class="nav-item-icon" alt="code-icon">
+        <img src="assets/icons/code.svg" class="nav-item-icon" alt="code-icon">
         Solución de Software
       </a>
       <a class="nav-item" href="network">
-        <img src="web/assets/icons/world.svg" class="nav-item-icon" alt="world-icon">
+        <img src="assets/icons/world.svg" class="nav-item-icon" alt="world-icon">
         Solución de Red
       </a>
       <a class="nav-item" href="office">
-        <img src="web/assets/icons/table.svg" class="nav-item-icon" alt="table-icon">
+        <img src="assets/icons/table.svg" class="nav-item-icon" alt="table-icon">
         Solución Ofimática
       </a>
       <a class="nav-item" href="price">
-        <img src="web/assets/icons/coin.svg" class="nav-item-icon" alt="coin-icon">
+        <img src="assets/icons/coin.svg" class="nav-item-icon" alt="coin-icon">
         Presupuesto
       </a>
       <a class="nav-item" href="development">
-        <img src="web/assets/icons/settings.svg" class="nav-item-icon" alt="settings-icon">
+        <img src="assets/icons/settings.svg" class="nav-item-icon" alt="settings-icon">
         Desarrollo
       </a>
     </nav>
 
 
-
-
-
     <main class="main-container">
 
       <article class="slogan-container">
-        <h1 class="rocket-title page-title">
+        <h1 class="page-title">
           Rocket Code
         </h1>        
-        <p class="eslogan-text">
+        <p class="slogan-text">
           Llevando tus ideas al infinito digital.
         </p>
       </article>
-
-
+      
+      <!-- Page title -->
+      
       <h2 class="page-title">
         Sobre Nosotros
       </h2>
 
-
-
-      <!-- About the team -->
+      <!-- Mission -->
       
-      <article class="article-container">
+      <article>
         <header class="article-title">
-          <img src="web/assets/icons/flag.svg" class="article-title-icon" alt="flag-icon">
-          Misión
+          <img src="assets/icons/flag.svg" alt="flag-icon">
+          <h3>Misión</h3>
         </header>
-        <section class="article-section">
-          En <b>Rocket Code</b>, nuestra misión es impulsar la innovación tecnológica al ofrecer soluciones de software a medida que superen las expectativas de nuestros clientes. Nos esforzamos por convertir ideas en realidades digitales, contribuyendo al éxito de empresas y emprendedores a través de la excelencia en el desarrollo de software.
-        </section>
+        <p>
+          En <b>Rocket Code</b>, nuestra misión es impulsar la innovación tecnológica al ofrecer soluciones de software 
+          a medida que superen las expectativas de nuestros clientes. Nos esforzamos por convertir ideas en realidades 
+          digitales, contribuyendo al éxito de empresas y emprendedores a través de la excelencia en el desarrollo de 
+          software.
+        </p>
       </article>
 
-      <article class="article-container">
+      <!-- Vision -->
+
+      <article>
         <header class="article-title">
-          <img src="web/assets/icons/eye-star.svg" class="article-title-icon" alt="eye-star-icon">
-          Visión
+          <img src="assets/icons/eye-star.svg" alt="eye-star-icon">
+          <h3>Visión</h3>
         </header>
-        <section class="article-section">
+        <p>
           Ser líderes reconocidos a nivel nacional e internacional en el desarrollo de software a medida, proporcionando soluciones tecnológicas de vanguardia que transformen negocios y marquen la pauta en la industria. Queremos ser la firma de confianza a la que acudan las organizaciones en busca de soluciones digitales innovadoras y personalizadas.
-        </section>
+        </p>
       </article>
 
-      <article class="article-container">
+      <!-- Goals -->
+
+      <article>
         <header class="article-title">
-          <img src="web/assets/icons/target-arrow.svg" class="article-title-icon" alt="target-arrow-icon">
-          Objetivos
+          <img src="assets/icons/target-arrow.svg" alt="target-arrow-icon">
+          <h3>Objetivos</h3>
         </header>
-        <section class="article-section">
-          <ul>
+        <p>
+          <ul class="article-list">
             <li>Desarrollar soluciones de software de alta calidad que se adapten a las necesidades específicas de cada cliente.</li>
             <li>Ampliar nuestra presencia en el mercado nacional e internacional, estableciendo alianzas estratégicas y expandiendo nuestra cartera de clientes.</li>
             <li>Fomentar la formación continua y el crecimiento profesional de nuestro equipo de desarrollo.</li>
             <li>Promover la innovación tecnológica a través de la investigación y el desarrollo de soluciones de vanguardia.</li>
             <li>Mantener un compromiso constante con la satisfacción del cliente, la transparencia y la ética en todos nuestros procesos.</li>
           </ul>
-        </section>
+        </p>
       </article>
 
+      <!-- Values -->
 
-
-      <article class="article-container">
+      <article>
         <header class="article-title">
-          <img src="web/assets/icons/diamond.svg" class="article-title-icon" alt="diamond-icon">
-          Valores
+          <img src="assets/icons/diamond.svg" alt="diamond-icon">
+          <h3>Valores</h3>
         </header>
-
-        <section class="article-section">
-          <span class="section-subtitle">Excelencia:</span>
-          Buscamos la perfección en todo lo que hacemos y nos esforzamos por superar las expectativas de nuestros clientes.
-        </section>
-
-        <section class="article-section">
-          <span class="section-subtitle">Innovación:</span>
-          Promovemos la creatividad y la búsqueda de soluciones tecnológicas novedosas.
-        </section>
-
-        <section class="article-section">
-          <span class="section-subtitle">Colaboración:</span>
-          Trabajamos en equipo y fomentamos un ambiente de colaboración y apoyo mutuo.
-        </section>
-
-        <section class="article-section">
-          <span class="section-subtitle">Integridad:</span>
-          Actuamos con honestidad, transparencia y ética en todas nuestras relaciones y procesos.
-        </section>
-
-        <section class="article-section">
-          <span class="section-subtitle">Pasión:</span>
-          Nos apasiona la tecnología y estamos comprometidos con el éxito de nuestros clientes.
-        </section>
-
-        <section class="article-section">
-          <span class="section-subtitle">Adaptabilidad:</span>
-          Nos adaptamos a los cambios y desafíos con agilidad y flexibilidad para cumplir con las expectativas de nuestros clientes.
-        <section class="article-section">
+        <p>
+          <ul class="article-list empty">
+            <li><b>Excelencia:</b> Buscamos la perfección en todo lo que hacemos y nos esforzamos por superar las expectativas de nuestros clientes. </li>
+            <li><b>Innovación:</b> Promovemos la creatividad y la búsqueda de soluciones tecnológicas novedosas. </li>
+            <li><b>Colaboración:</b> Trabajamos en equipo y fomentamos un ambiente de colaboración y apoyo mutuo. </li>
+            <li><b>Integridad:</b> Actuamos con honestidad, transparencia y ética en todas nuestras relaciones y procesos. </li>
+            <li><b>Pasión:</b> Nos apasiona la tecnología y estamos comprometidos con el éxito de nuestros clientes. </li>
+            <li><b>Adaptabilidad:</b> Nos adaptamos a los cambios y desafíos con agilidad y flexibilidad para cumplir con las expectativas de nuestros clientes. </li>
+          </ul>
+        </p>
       </article>
 
+      <!-- Team members  -->
 
-
-      <!-- Members of the team -->
-
-      <article class="members-section">
-        <header class="members-section-title">
-          <img class="article-title-icon" src="web/assets/icons/user-plus.svg" alt="user-plus-icon">
-          Nuestro Equipo
+      <article>
+        <header class="article-title">
+          <img src="assets/icons/user-plus.svg" alt="user-plus-icon">
+          <h3>Nuestro Equipo</h3>
         </header>
+        <div class="members">
 
-        <div class="members-container">
-          <section class="member-card">
-            <img class="member-image" src="web/assets/members/ismael.webp" alt="member-card">
-            <div class="member-info-container">
+          <article class="member">
+            <img class="member" src="assets/members/ismael.webp" alt="member-avatar">
+            <div class="member">
               <b>Ismael Cortés Gutiérrez</b>
               <bi>Líder de equipo</bi>
               <p>Líder de proyecto, programador web y de apps con más de 6 años de experiencia en el sector.</p>
             </div>
-          </section>
+          </article>
 
-          <section class="member-card">
-            <img class="member-image" src="web/assets/members/rodolfo.webp" alt="member-card">
-            <div class="member-info-container">
+          <article class="member">
+            <img class="member" src="assets/members/rodolfo.webp" alt="member-avatar">
+            <div class="member">
               <b>Jose Rodolfo Briseño Pulido</b>
               <bi>Ingeniero de Redes</bi>
               <p>Especialista en redes con 15 años de experiencia, encargado del desarrollo y la gestión de las soluciones de red, asegurando un buen funcionamiento.</p>
             </div>
-          </section>
+          </article>
 
-          <section class="member-card">
-            <img class="member-image" src="web/assets/members/jannay.webp" alt="member-card">
-            <div class="member-info-container">
+          <article class="member">
+            <img class="member" src="assets/members/jannay.webp" alt="member-avatar">
+            <div class="member">
               <b>Jannay Manzo Díaz</b>
               <bi>Programadora</bi>
               <p>Programadora Senior con 10 años de experiencia, encargada del desarrollo de soluciones de desarrollo de software a medida para clientes.</p>
             </div>
-          </section>
+          </article>
 
-          <section class="member-card">
-            <img class="member-image" src="web/assets/members/javier.webp" alt="member-card">
-            <div class="member-info-container">
+          <article class="member">
+            <img class="member" src="assets/members/javier.webp" alt="member-avatar">
+            <div class="member">
               <b>Francisco Javier Zepeda Jiménez</b>
               <bi>Analista</bi>
               <p>Especialista con 5 años de experiencia en el sector, encargado de realizar estudios de campo y probar el desempeño de los productos desarrollados, además de asegurar el cumplimiento de los requerimientos del proyecto.</p>
             </div>
-          </section>
+          </article>
 
         </div>
       </article>
 
-
-    
     </main>
-
-
 
 
     <footer class="footer-container">
       <div class="footer-first">
         <a href="https://www.instagram.com/utj_oficial/" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-instagram.svg" alt="icon-instagram">
+          <img class="footer-icon" src="assets/icons/brand-instagram.svg" alt="icon-instagram">
         </a>
-
         <a href="https://www.facebook.com/utj.universidad" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-facebook.svg" alt="icon-facebook">
+          <img class="footer-icon" src="assets/icons/brand-facebook.svg" alt="icon-facebook">
         </a>
-
         <a href="https://twitter.com/utj_oficial" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-twitter.svg" alt="icon-twitter">
+          <img class="footer-icon" src="assets/icons/brand-twitter.svg" alt="icon-twitter">
         </a>
-
         <a href="https://www.youtube.com/@OFICIALUTJ" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-youtube.svg" alt="icon-youtube">
+          <img class="footer-icon" src="assets/icons/brand-youtube.svg" alt="icon-youtube">
         </a>
-
         <a href="https://github.com/IsmaCortGtz/rocket-code/" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-github.svg" alt="icon-github">
+          <img class="footer-icon" src="assets/icons/brand-github.svg" alt="icon-github">
         </a>
       </div>
-
       <div class="footer-second">
         2024. Rocket Code
       </div>

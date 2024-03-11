@@ -1,0 +1,22 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-main-width);
+  margin: auto;
+  margin-bottom: 1em;
+  padding: var(--main-padding);
+  line-height: 1.5;
+  flex: 1;
+  gap: 1em;
+}
+
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.3em;
+}
+
+.iframe-container {
+  background-color: var(--nav-second-color);
+  border-radius: var(--embeded-container-border-radius);
+}

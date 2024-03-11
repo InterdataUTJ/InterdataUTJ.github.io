@@ -1,0 +1,75 @@
+/* ================================= */
+/* ========= Navbar styles ========= */
+/* ================================= */
+
+/* Container */
+.nav-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  background-color: var(--nav-second-color);
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Items */
+.nav-item {
+  transition: background-color 0.2s ease-in-out;
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.nav-item:hover {
+  background-color: var(--nav-third-color);
+}
+
+/* Item icon */
+.nav-item-icon {
+  filter: invert(90%);
+  height: var(--button-icon-size);
+  width: var(--button-icon-size);
+}
+
+
+
+/* ======================================== */
+/* ========= Navbar media queries ========= */
+/* ======================================== */
+
+/* For large mobile */
+@media (max-width: 767px) {
+  .nav-container {
+    padding-top: 5.3em;
+    transition: left 0.2s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100dvh;
+    width: 80%;
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: nowrap;
+  }
+
+  .nav-show {
+    left: 0;
+  }
+
+  .nav-item {
+    justify-content: left;
+  }
+}

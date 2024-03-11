@@ -1,0 +1,101 @@
+/* ======================================= */
+/* ========= Import Google Fonts ========= */
+/* ======================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* ===================================== */
+/* ========= Define Theme Vars ========= */
+/* ===================================== */
+
+:root {
+  /* Colors */
+  --background-color: #222222;
+  --nav-color: #363636;
+  --nav-second-color: #454545;
+  --nav-third-color: #5e5e5e;
+  --text-color: #dedede;
+  --text-second-color: #999999;
+
+  /* Sizes */
+  --max-header-width: 1200px;
+  --max-main-width: 1000px;
+  --main-padding: 1em;
+
+  --article-border-size: 2px;
+  --article-padding: 0.5em;
+
+  --button-border-radius: 0.8em;
+  --button-padding: 0.8em;
+  --button-icon-size: 1.2em;
+
+  --footer-padding: 1em;
+  --embeded-container-border-radius: 0.8em;
+}
+
+
+
+/* =================================== */
+/* ========= Styles Cleaners ========= */
+/* =================================== */
+
+* {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+html, body {
+  font-size: 20px;
+  color: var(--text-color);
+  min-height: 100dvh;
+  background-color: var(--background-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  user-select: none;
+}
+
+bi {
+  font-weight: bold;
+  font-style: italic;
+}
+
+hi {
+  font-style: italic;
+  color: var(--text-second-color);
+}
+
+p {
+  text-indent: 2em;
+}
+
+
+
+/* ================================= */
+/* ========= Media Queries ========= */
+/* ================================= */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 490px) {
+  html {
+    font-size: 15px;
+  }
+}

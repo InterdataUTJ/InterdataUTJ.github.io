@@ -11,25 +11,25 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "web/assets/logo/favicon.png",
+      "src": "assets/logo/favicon.png",
       "sizes": "48x48",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "web/assets/logo/icon_96.png",
+      "src": "assets/logo/icon_96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "web/assets/logo/icon_192.png",
+      "src": "assets/logo/icon_192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "web/assets/logo/icon_512.png",
+      "src": "assets/logo/icon_512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

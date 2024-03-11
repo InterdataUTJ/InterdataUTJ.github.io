@@ -3,61 +3,62 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="web/assets/logo/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png" />
     <link rel="manifest" href="manifest.json">
     <title>Presupuestos</title>
 
-    <link rel="stylesheet" href="web/styles/index.css">
-    <link rel="stylesheet" href="web/styles/header.css">
-    <link rel="stylesheet" href="web/styles/main.css">
-    <link rel="stylesheet" href="web/styles/footer.css">
-    <link rel="stylesheet" href="web/styles/pages/development.css">
-    <link rel="stylesheet" href="web/styles/pages/about.css">
-    <link rel="stylesheet" href="web/styles/viewTransitions.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/pages/development.css">
+    <link rel="stylesheet" href="styles/pages/about.css">
+    <link rel="stylesheet" href="styles/viewTransitions.css">
 
-    <script src="web/scripts/events.js" defer></script>
-    <script src="web/scripts/viewTransition.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/viewTransition.js" defer></script>
   </head>
 
   <body>
 
     <header class="header-container">
       <div class="header-content">
-        <a href="./" class="header-logo-container">
-          <img class="header-logo-img" src="web/assets/logo/logo.webp" alt="Rocket Code">
+        <a href="./" class="header-home-button">
+          <img class="header-logo-img" src="assets/logo/logo.webp" alt="Rocket Code">
+          <h2 class="header-title">Rocket Code</h2>
         </a>
-        <h2 class="header-title">Rocket Code</h2>
-        <img src="web/assets/icons/menu-2.svg" class="menu-button-icon" alt="menu-icon">
+        <img src="assets/icons/menu-2.svg" class="menu-button-icon" alt="menu-icon">
       </div>
     </header>
 
     <nav class="nav-container">
       <a class="nav-item" href="./">
-        <img src="web/assets/icons/users.svg" class="nav-item-icon" alt="users-icon">
+        <img src="assets/icons/users.svg" class="nav-item-icon" alt="users-icon">
         Sobre Nosotros
       </a>
       <a class="nav-item" href="clients">
-        <img src="web/assets/icons/coins.svg" class="nav-item-icon" alt="coins-icon">
+        <img src="assets/icons/coins.svg" class="nav-item-icon" alt="coins-icon">
         Nuestros Clientes
       </a>
       <a class="nav-item" href="software">
-        <img src="web/assets/icons/code.svg" class="nav-item-icon" alt="code-icon">
+        <img src="assets/icons/code.svg" class="nav-item-icon" alt="code-icon">
         Solución de Software
       </a>
       <a class="nav-item" href="network">
-        <img src="web/assets/icons/world.svg" class="nav-item-icon" alt="world-icon">
+        <img src="assets/icons/world.svg" class="nav-item-icon" alt="world-icon">
         Solución de Red
       </a>
       <a class="nav-item" href="office">
-        <img src="web/assets/icons/table.svg" class="nav-item-icon" alt="table-icon">
+        <img src="assets/icons/table.svg" class="nav-item-icon" alt="table-icon">
         Solución Ofimática
       </a>
       <a class="nav-item" href="price">
-        <img src="web/assets/icons/coin.svg" class="nav-item-icon" alt="coin-icon">
+        <img src="assets/icons/coin.svg" class="nav-item-icon" alt="coin-icon">
         Presupuesto
       </a>
       <a class="nav-item" href="development">
-        <img src="web/assets/icons/settings.svg" class="nav-item-icon" alt="settings-icon">
+        <img src="assets/icons/settings.svg" class="nav-item-icon" alt="settings-icon">
         Desarrollo
       </a>
     </nav>
@@ -75,27 +76,21 @@
       <p>
         Aquí se muestra el costo que tendrá el trabajo completo llevado a cabo por <bi>Rocket Code</bi>.
         Este presupuesto no solo toma en cuenta los entregables desarrollados por el equipo, sino también el costo de los equipos 
-        necesarios para implementar todas las soluciones diseñadas <hi>(siendo la mayoría del equipo necesario de la solución de red)</hi> y 
+        necesarios para implementar todas las soluciones diseñadas, el equipo de red a utilizar y 
         algunas utilidades de software necesarias para garantizar la seguridad de los equipos. 
       </p>
 
-      <p>
-        <hi>
-          Google Sheets no tiene compatibilidad completa con Excel, por lo que por lo que algunas imágenes podrían no verse adecuadamente desde Google Drive.
-        </hi>
-      </p>
-
-      <a class="download-button" href="https://drive.google.com/uc?export=download&id=1sZMytZiqw_Usd0K36a6rARzSEtBEloY8">
-        <img src="web/assets/icons/cloud-download.svg" class="nav-item-icon" alt="cloud-download">
+      <a class="download-button" href="https://drive.google.com/uc?export=download&id=1ni0wfyHxuRvICS7UX1-PL78zkJFsZUqz">
+        <img src="assets/icons/cloud-download.svg" class="nav-item-icon" alt="cloud-download">
         Descargar archivo
       </a>
 
-      <a target="_blank" rel="noopener noreferrer" class="download-button" href="https://docs.google.com/spreadsheets/d/1sZMytZiqw_Usd0K36a6rARzSEtBEloY8/view">
-        <img src="web/assets/icons/eye-star.svg" class="nav-item-icon" alt="eye-star">
+      <a target="_blank" rel="noopener noreferrer" class="download-button" href="https://drive.google.com/file/d/1ni0wfyHxuRvICS7UX1-PL78zkJFsZUqz/view">
+        <img src="assets/icons/eye-star.svg" class="nav-item-icon" alt="eye-star">
         Abrir archivo
       </a>
 
-      <iframe class="iframe-container" src="https://docs.google.com/spreadsheets/u/5/d/1sZMytZiqw_Usd0K36a6rARzSEtBEloY8/preview" frameborder="0" height="500px"></iframe>
+      <iframe class="iframe-container" src="https://drive.google.com/file/d/1ni0wfyHxuRvICS7UX1-PL78zkJFsZUqz/preview" frameborder="0" height="500px"></iframe>
     
     
     </main>
@@ -106,23 +101,23 @@
     <footer class="footer-container">
       <div class="footer-first">
         <a href="https://www.instagram.com/utj_oficial/" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-instagram.svg" alt="icon-instagram">
+          <img class="footer-icon" src="assets/icons/brand-instagram.svg" alt="icon-instagram">
         </a>
 
         <a href="https://www.facebook.com/utj.universidad" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-facebook.svg" alt="icon-facebook">
+          <img class="footer-icon" src="assets/icons/brand-facebook.svg" alt="icon-facebook">
         </a>
 
         <a href="https://twitter.com/utj_oficial" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-twitter.svg" alt="icon-twitter">
+          <img class="footer-icon" src="assets/icons/brand-twitter.svg" alt="icon-twitter">
         </a>
 
         <a href="https://www.youtube.com/@OFICIALUTJ" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-youtube.svg" alt="icon-youtube">
+          <img class="footer-icon" src="assets/icons/brand-youtube.svg" alt="icon-youtube">
         </a>
 
         <a href="https://github.com/IsmaCortGtz/rocket-code/" target="_blank" rel="noopener noreferrer" class="footer-button">
-          <img class="footer-icon" src="web/assets/icons/brand-github.svg" alt="icon-github">
+          <img class="footer-icon" src="assets/icons/brand-github.svg" alt="icon-github">
         </a>
       </div>
 

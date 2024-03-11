@@ -1,0 +1,105 @@
+/* ================================== */
+/* ========= Article styles ========= */
+/* ================================== */
+
+/* Slogan */
+.slogan-container {
+  margin-bottom: 4em;
+  margin-top: 2em;
+  border: none;
+}
+
+.slogan-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-second-color);
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* Article  */
+
+article {
+  margin-bottom: 2em;
+  border-top: var(--article-border-size) solid var(--nav-second-color);
+}
+
+header.article-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header.article-title > h3, h3.article-title {
+  padding: var(--article-padding) 0;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+header.article-title > img {
+  filter: invert(90%);
+  width: 30px;
+}
+
+ul.article-list > li {
+  list-style-position: inside;
+  padding: 0.2em 0;
+}
+
+ul.empty > li {
+  list-style-type: none;
+}
+
+
+
+/* Members  */
+
+article > div.members {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+article.member {
+  background-color: var(--nav-second-color);
+  padding: 20px;
+  margin: 0;
+  border-radius: 35px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+article.member:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+img.member {
+  height: 150px;
+  width: 105px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+div.member {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+
+/* ========================================= */
+/* ========= Members media queries ========= */
+/* ========================================= */
+
+/* Tablet Styles */
+@media (max-width: 767px) {
+  article.member, article.member:nth-child(even) {
+    flex-direction: column;
+  }
+}
