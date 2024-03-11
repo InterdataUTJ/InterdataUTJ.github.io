@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./web/assets/logo/logo.svg" alt="Rocket Code" width="200">
+  <img src="./assets/logo/logo.svg" alt="Rocket Code" width="200">
   <br>
   Rocket Code
   <br>
