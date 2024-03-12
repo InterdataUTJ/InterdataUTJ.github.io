@@ -10,6 +10,7 @@
 }
 
 .slogan-text {
+  text-indetn: 0;
   text-align: center;
   font-size: 1.5rem;
   color: var(--text-second-color);
