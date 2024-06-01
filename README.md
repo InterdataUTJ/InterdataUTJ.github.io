@@ -14,6 +14,9 @@
 </p>
 
 
+> [!IMPORTANT]  
+> Este equipo fue disuelto. El repositorio de nuestra página web y todos sus assets ahora están archivados para futuras consultas, pero no recibirán más actualizaciones ni correcciones de errores. Gracias por el apoyo. 😁
+
 
 ## Sobre Nosotros
 
