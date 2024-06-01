@@ -35,6 +35,7 @@ Puedes entrar a la página web a través de [este enlace](https://ismacortgtz.gi
 * Jose Rodolfo Briseño Pulido
 * Jannay Manzo Díaz
 * Francisco Javier Zepeda Jiménez
+* ~Oswaldo Noé Villaseñor Martínez~
 
 
 
